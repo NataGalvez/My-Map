@@ -1,7 +1,9 @@
-<h1>{{ title }}</h1>
-
-<!-- this creates a google map on the page with the given lat/lng from -->
-<!-- the component as the initial center of the map: -->
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+<div id="map" style="width: 400px; height: 300px;"></div>
+<script>
+  mapboxgl.accessToken =
+    "pk.eyJ1IjoibmF0YWdhbHZleiIsImEiOiJjazJueXZ4cGgwNzlqM2xtdDNtNDd0cjh3In0.fWKEwG84vN_6E9hb9hoKrA";
+  var map = new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/mapbox/streets-v11"
+  });
+</script>

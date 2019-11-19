@@ -5,12 +5,7 @@ import { AppComponent } from "./app.component";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    AgmCoreModule.forRoot({
-      apiKey: "AIzaSyDcYqhu46x-etjFySvXDU5cdMH87jTawKA"
-    })
-  ],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
 })
